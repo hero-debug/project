@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
     <head>
         <title>人事管理网站</title>
@@ -13,13 +15,13 @@
             <h3>人事管理系统网站<h3>
         </div>
         <div id="loginbox">            
-            <form id="loginform" class="form-vertical" action="main.html" />
+            <form id="loginform" class="form-vertical" action="LoginServlet" />
 				<p>请在输入用户名和密码进行登录</p>
                 <div class="control-group">
                     <div class="controls">
                         <div class="input-prepend">
                             <span class="add-on" title="用户名"><i class="icon-user"></i></span>
-                            <input type="text" placeholder="请输入用户名" />
+                            <input type="text" placeholder="请输入用户名" name="username"/>
                         </div>
                     </div>
                 </div>
@@ -27,7 +29,7 @@
                     <div class="controls">
                         <div class="input-prepend">
                             <span class="add-on" title="密码"><i class="icon-lock"></i></span>
-                            <input type="password" placeholder="请输入密码" />
+                            <input type="password" placeholder="请输入密码" name="password"/>
                         </div>
                     </div>
                 </div>
